@@ -3,9 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 
-const Hello = (props) => {
-
-  const { name, age } = props
+const Hello = ({ name, age }) => {
   const bornYear = () => new Date().getFullYear() - age
 
   return (
